@@ -1,0 +1,154 @@
+.loading{
+    text-align: center;
+}
+
+.Main{
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+
+.pokemon-cards-wrapper {
+    display: grid;
+    grid-template-columns:  repeat(3,1fr);
+    grid-gap: 15px;
+    padding: 10px;
+    max-width: 570px;
+    margin: 0 auto;
+}
+.pokemon-card > .pokemon-type {
+    padding-left: 12px;
+}
+
+.pokemon-type {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.pokemon-cards-wrapper>.pokemon-card{
+    border: 1px solid #000;
+}
+
+.pokemon-type-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pokemon-name {
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.pokemon-type p:first-letter {
+    text-transform: capitalize;
+}
+
+.pokemon-type p {
+    width: 63px;
+    height: 28px;
+    padding-top: 4px;
+    border-radius: 5px;
+}
+
+.bug p{
+    background: #154923
+}
+.poison p{
+    background: #5d298a  
+}
+.grass p{
+    background: #22cc4f 
+}
+.fire p{
+    background: #ac191f
+}
+.water p{
+    background: #0e51e2
+}
+.normal p{
+    background: #75515b
+}
+.flying p{
+    background: #48677e
+}
+
+button.Load-more.active {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: #218fff;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 800;
+    border: 1px solid #000;
+    cursor: pointer;
+    outline: none;
+}
+
+button.Load-more {
+    display: none;
+}
+
+.main-content-wrapper{
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.activate-filter-dropdown{
+    display: block;
+    height: 31px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: #218fff;
+    color: #fff;
+    font-weight: 800;
+    border: 1px solid #000;
+    cursor: pointer;
+    outline: none;
+}
+.filter.active{
+    width: 108px;
+    background: #fff;
+    border: 1px solid black;
+    position: absolute;
+    top: 10%;
+    left: 24%;
+    display: block;
+}
+.filter{
+    display: none;
+}
+
+.filter-options{
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.filter-options label{
+    display: flex;
+    justify-content: space-between;
+}
+.close-btn{
+    position: absolute;
+    right: 0;
+    background: #ff5158;
+    border: 1px solid #0000;
+    cursor: pointer;
+    outline: none
+}
+
+.pokemon-card-disable{
+    display: none;
+}
+
+
+/****MEDIA****/
+@media(max-width:480px){
+    .pokemon-cards-wrapper {
+        display: grid;
+        grid-template-columns:  repeat(2,1fr);
+    }
+}

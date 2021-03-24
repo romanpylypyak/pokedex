@@ -1,0 +1,122 @@
+.singe-pokemon-info.active {
+    border: 1px solid #000;
+    width: 250px;
+    position: fixed;
+    top: 10px;
+    right: 0;
+    background: #fff;
+    display: block;
+}
+.singe-pokemon-info{
+    display:none
+}
+
+.singe-pokemon-info img {
+    padding: 10px 10px 0px 10px;
+}
+
+.singe-pokemon-info-name {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 20px;
+};
+
+
+
+.pokemon-info-row:nth-child(1) {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #000;
+}
+
+
+ .pokemon-info-row {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #000;
+} 
+
+.single-card-pokemon-type-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.single-card-pokemon-type-wrapper p,
+.pokemon-info-row p {
+    margin: 0;
+}
+.pokemon-info-row p:nth-child(1) {
+    width: 75%;
+}
+
+.pokemon-info-row p:nth-child(2) {
+    margin: 5px 0;
+    width: 25%;
+}
+
+.types-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.pokemon-types-row,
+.pokemon-type-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pokemon-types-row > p:nth-child(1) {
+    border-right: 1px solid #000;
+    padding: 10px 0;
+    margin: 0;
+    width: 75%;
+}
+
+.pokemon-type-row > p:nth-child(1) {
+    width: 75%;
+    padding: 5px 0; 
+    border-right: 1px solid #000;
+    margin: 0;
+}
+
+
+.pokemon-types-row > p:first-of-type
+.pokemon-type-row > p:first-of-type,
+.pokemon-info-row p:first-of-type {
+    padding: 5px 0;
+    border-right: 1px solid #000;
+    margin: 0;
+}
+
+.types-wrapper p{
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.types-wrapper{
+    width: 25%;
+}
+
+.type-wrapper{
+    text-transform: capitalize;
+    width: 25%;
+}
+
+.type-wrapper p{
+    margin: 5px 0;
+    text-transform: capitalize;
+}
+
+.pokemon-skills{
+    margin: 15px;
+    border: 1px solid #000;
+}
+
+.close-btn{
+    position: absolute;
+    right: 0;
+    background: #ff5158;
+    border: 1px solid #0000;
+    cursor: pointer;
+    outline: none
+}
